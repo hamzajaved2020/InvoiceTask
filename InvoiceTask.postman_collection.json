@@ -1,0 +1,95 @@
+{
+	"info": {
+		"_postman_id": "9fb34cb1-d17e-44a9-b511-8f0e1ec2e287",
+		"name": "InvoiceTask",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "4701985",
+		"_collection_link": "https://phptravels.postman.co/workspace/FarabiMedical~e697bb02-9eec-49b7-a46b-ae18ed74e931/collection/4701985-9fb34cb1-d17e-44a9-b511-8f0e1ec2e287?action=share&source=collection_link&creator=4701985"
+	},
+	"item": [
+		{
+			"name": "Get Invoices",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://invoicetask.test/api/v1/invoices",
+					"protocol": "https",
+					"host": [
+						"invoicetask",
+						"test"
+					],
+					"path": [
+						"api",
+						"v1",
+						"invoices"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Show Invoice",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://invoicetask.test/api/v1/invoices/19",
+					"protocol": "https",
+					"host": [
+						"invoicetask",
+						"test"
+					],
+					"path": [
+						"api",
+						"v1",
+						"invoices",
+						"19"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Invoice",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "start_date",
+							"value": " 2024-08-21",
+							"type": "text"
+						},
+						{
+							"key": "end_date",
+							"value": " 2025-08-21",
+							"type": "text"
+						},
+						{
+							"key": "customer_id",
+							"value": " 1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://invoicetask.test/api/v1/invoices",
+					"protocol": "https",
+					"host": [
+						"invoicetask",
+						"test"
+					],
+					"path": [
+						"api",
+						"v1",
+						"invoices"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
